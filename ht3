@@ -1,0 +1,21 @@
+class Airline:
+    def __init__(self, dest, numb,travel_class, dep_time,travel_day):
+        self.destination = dest
+        self.numb = numb
+        self.travel_class = travel_class
+        self.dep_time = dep_time
+        self.travel_day = travel_day
+
+    def info(self):
+        # format the info string
+        info_str = " %s travels %s class\n from %s to %s on %s"
+        info = info_str % (self.dest, self.numb, self.travel_class,
+                           self.dep_time, self.travel_day)
+        return info
+# Airline(dest, travel_date, travel_class, price)
+
+air1 = Airline("HEATHROW","1341","business class","16-54","mon")
+air2 = Airline("MSQ","B6256","economy","08-20","wed")
+
+print(air1.travel_day)
+print(air2.travel_day)
